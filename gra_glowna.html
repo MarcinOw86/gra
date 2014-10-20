@@ -24,7 +24,7 @@
     </head>
 <body>
 
-         <svg id="svgout" >
+         <svg id="svgout" width="800" height="600" >
          <!--viewBox="0 0 800 600"-->
            
 <!--
@@ -46,8 +46,8 @@
    version="1.1"
    inkscape:version="0.48.5 r10040"
    sodipodi:docname="gra-samochod.svg"
-   x="100"
-       y="100">
+   x="10"
+   y="10">
   <defs
      id="defs4">
     <inkscape:path-effect
@@ -196,7 +196,7 @@ function processKeys(e) {
         case 39 : // <-
             var x = car.x.baseVal.value;
             x = x + 5;
-            if (x > 310) x = 310;
+            if (x > 800) x = 800;
             car.x.baseVal.value = x;  
         break;
         case 38 : // up
@@ -208,7 +208,7 @@ function processKeys(e) {
         case 40 : // down
             var y = car.y.baseVal.value;
             y = y + 5;
-            if (y > 310) y = 310;
+            if (y > 600) y = 600;
             car.y.baseVal.value = y;  
         break;
 
