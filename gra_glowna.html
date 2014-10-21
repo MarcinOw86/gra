@@ -179,6 +179,7 @@
 
 window.onload = function () {
 
+
 var s = Snap("#svgout"); // This will use an existing svg element (not a div)
 
     
@@ -222,13 +223,26 @@ function processKeys(e) {
         break;
     }
 }
+
+
 window.addEventListener('keydown', processKeys, false);
-                        
+
+
+function wjazd_do_garazu() {
+  /*var y = car.y.baseVal.value;
+  var x = car.x.baseVal.value;
+  if ((y < 50) && (x > 400))*/
+    var x = car.x.baseVal.value;
+    car.x.baseVal.value = 450;
+      /*                  
   createWall();
         setInterval('doAnimation()',16.7);
- 
-                    
+ */
+   }    
+   wjazd_do_garazu();             
 }
+
+
        
 
 
