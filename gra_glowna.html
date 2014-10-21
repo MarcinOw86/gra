@@ -194,11 +194,13 @@ var s = Snap("#svgout"); // This will use an existing svg element (not a div)
 
 function processKeys(e) {
     switch (e.keyCode) {
-        case 39 : // <-
+        case 39 : // ->
             var x = car.x.baseVal.value;
             x = x + 5;
             if (x > 800) x = 800;
             car.x.baseVal.value = x;  
+            if (x>=400) x=400;
+            car.x.baseVal.value = x;
         break;
         case 38 : // up
             var y = car.y.baseVal.value;
@@ -214,12 +216,12 @@ function processKeys(e) {
         break;
 
 
-        case 37 : // ->
+        case 37 : // <-
             var x = car.x.baseVal.value;
             x = x - 5;
             if (x < 10) x = 10;
             car.x.baseVal.value = x;
-
+            document.write("udałosie")
         break;
     }
 }
@@ -227,21 +229,23 @@ function processKeys(e) {
 
 window.addEventListener('keydown', processKeys, false);
 
-
+/*
 function wjazd_do_garazu() {
-  /*var y = car.y.baseVal.value;
+  var y = car.y.baseVal.value;
   var x = car.x.baseVal.value;
-  if ((y < 50) && (x > 400))*/
+  if ((y < 50) && (x > 400))
     var x = car.x.baseVal.value;
     car.x.baseVal.value = 450;
+    */
       /*                  
   createWall();
         setInterval('doAnimation()',16.7);
  */
    }    
+   /*
    wjazd_do_garazu();             
 }
-
+*/
 
        
 
