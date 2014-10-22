@@ -199,8 +199,9 @@ function processKeys(e) {
             x = x + 5;
             if (x > 800) x = 800;
             car.x.baseVal.value = x;  
-            if (x>=400) x=400;
+            if (x>=400)x=400;
             car.x.baseVal.value = x;
+
         break;
         case 38 : // up
             var y = car.y.baseVal.value;
@@ -221,9 +222,13 @@ function processKeys(e) {
             x = x - 5;
             if (x < 10) x = 10;
             car.x.baseVal.value = x;
-            document.write("udałosie")
+
         break;
+
     }
+    var x = car.x.baseVal.value;
+        if (x==400)
+        document.write("udałosie");
 }
 
 
